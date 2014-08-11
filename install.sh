@@ -77,6 +77,8 @@ echo "Installing linphone in workdirectory" $INSTALL_PATH
   PKG_CONFIG_PATH=/usr/local/lib/pkgconfig ./configure --prefix=/opt/local --with-readline=/opt/local --disable-x11 --with-srtp=/opt/local  --disable-strict --enable-relativeprefix && make
   sudo make install
 
+  cd $INSTALL_PATH
+  
 # Install mediaStreamer x264
   git clone git://git.linphone.org/msx264.git --recursive
   cd msx264
